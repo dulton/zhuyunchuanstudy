@@ -1,0 +1,513 @@
+cscope 16 D:\work\zhuyunchuanstudy\socket"               0000002711
+	@D:\work\zhuyunchuanstudy\socket\main.c
+
+1 
+	~<¡dio.h
+>
+
+2 
+	~<sock‘_£rv”.h
+>
+
+	@D:\work\zhuyunchuanstudy\socket\socket_server.c
+
+1 
+	~"sock‘_£rv”.h
+"
+
+2 
+	~<¡dio.h
+>
+
+4 
+	gsockfd_þ›Á
+;
+
+5 
+	gsockfd_£rv”
+;
+
+6 
+sockaddr_š
+ 
+	gþ›Á_addr
+;
+
+7 
+sockaddr_š
+ 
+	g£rv”_addr
+;
+
+10 
+	$Sock‘_C»©e
+(
+domaš
+, 
+ty³
+, 
+´ÙocÞ
+)
+
+12 
+	`uÆšk
+("sockfd_server");
+
+13 if(-1 =ð
+sockfd_£rv”
+ = 
+	`sock‘
+(
+domaš
+, 
+ty³
+, 
+´ÙocÞ
+));
+
+15 
+	`´štf
+("socket createƒrror");
+
+17 
+	`ex™
+(1);
+
+20 
+	`´štf
+("socket create succesful");
+
+22  
+sock‘fd_£rv”
+;
+
+23 
+	}
+}
+
+26 
+	$Sock‘_Clo£
+(
+sock_fd
+)
+
+28 if(-1 =ð
+	`þo£
+(
+sock_fd
+));
+
+30 
+	`´štf
+("close socketƒrror");
+
+32 
+	`ex™
+(1);
+
+35 
+	`´štf
+("close socket succesful");
+
+37 
+	}
+}
+
+40 
+	$Sock‘_Bšd
+(
+sock_fd
+, cÚ¡ 
+sockaddr
+ *
+addr
+, 
+sockËn_t
+ 
+Ën
+)
+
+42 if(-1 =ð
+	`bšd
+(
+sock_fd
+, 
+addr
+, 
+Ën
+))
+
+44 
+	`´štf
+("socket bindƒrroe");
+
+46 
+	`ex™
+(1);
+
+49 
+	`´štf
+("bšd % tØsock‘ %d", 
+addr
+, 
+sock_fd
+);
+
+52 
+	}
+}
+
+55 
+	$Li¡’
+(
+sock_fd
+, 
+backlog
+)
+
+57 
+	`as£¹
+(
+backlog
+ <ð
+BACKLOG
+);
+
+59 if(-1 =ð
+	`li¡’
+(
+sock_fd
+, 
+backlog
+))
+
+61 
+	`´štf
+("listenƒrror");
+
+63 
+	`ex™
+(1);
+
+67 
+	}
+}
+
+70 
+ssize_t
+ 
+	$R—d
+(
+fžedes
+, *
+buf
+, 
+size_t
+ 
+nby‹s
+)
+
+72 
+ssize_t
+ 
+Ën
+ = 0;
+
+73 if(-1 =ð
+Ën
+ = 
+	`»ad
+(
+fžedes
+, 
+buf
+, 
+nby‹s
+))
+
+75 
+	`´štf
+("read fileƒrror");
+
+76 
+	`ex™
+(1);
+
+79 
+	`´štf
+("fžËÀ%d", 
+Ën
+);
+
+82 
+	}
+}
+
+85 * 
+	$PrÙocÞ_P¬£
+(* 
+fd
+)
+
+87 * 
+fd_tmp
+ = 
+fd
+;
+
+89 
+	}
+}
+
+92 
+	$Di¥Ïy
+(* 
+buf
+)
+
+94 * 
+buf_tmp
+ = 
+buf
+;
+
+95 
+	`as£¹
+(
+NULL
+ !ð
+buf_tmp
+);
+
+97 
+	`´štf
+("%s", 
+buf_tmp
+);
+
+98 
+	}
+}
+
+	@D:\work\zhuyunchuanstudy\socket\socket_server.h
+
+1 #iâdeà
+SOCKET_SERVER_H
+
+
+2 
+	#SOCKET_SERVER_H
+
+
+	)
+
+4 
+	~<¡dio.h
+>
+
+5 
+	~<sys/sock‘.h
+>
+
+6 
+	~<sys/ty³s.h
+>
+
+7 
+	~<uni¡d.h
+>
+
+8 
+	~<Ãtš‘/š.h
+>
+
+9 
+	~<¬·/š‘.h
+>
+
+11 
+	#SERVER_PORT
+ 8000
+
+12 
+	#BACKLOG
+ 10
+
+13 
+	#MAX_CONNECTION
+ 10
+
+	)
+
+16 
+In™
+();
+
+17 
+Sock‘_C»©
+(
+domaš
+, 
+ty³
+, 
+´ÙocÞ
+);
+
+18 
+Sock‘_Clo£
+(
+sock_fd
+);
+
+19 
+Sock‘_Bšd
+(
+sock_fd
+, cÚ¡ *
+addr
+, 
+sockËn_t
+ 
+Ën
+);
+
+20 
+Sock‘_Li¡’
+(
+sock_fd
+, 
+backlog
+);
+
+21 
+R—d
+();
+
+22 * 
+PrÙocÞ_P¬£
+();
+
+23 * 
+Sock‘_Rev
+();
+
+24 
+Di¥Ïy
+();
+
+	@socket_server.h
+
+1 #iâdeà
+SOCKET_SERVER_H
+
+
+2 
+	#SOCKET_SERVER_H
+
+
+	)
+
+4 
+	~<¡dio.h
+>
+
+5 
+	~<sys/sock‘.h
+>
+
+6 
+	~<sys/ty³s.h
+>
+
+7 
+	~<uni¡d.h
+>
+
+8 
+	~<Ãtš‘/š.h
+>
+
+9 
+	~<¬·/š‘.h
+>
+
+11 
+	#SERVER_PORT
+ 8000
+
+12 
+	#BACKLOG
+ 10
+
+13 
+	#MAX_CONNECTION
+ 10
+
+	)
+
+16 
+In™
+();
+
+17 
+Sock‘_C»©
+(
+domaš
+, 
+ty³
+, 
+´ÙocÞ
+);
+
+18 
+Sock‘_Clo£
+(
+sock_fd
+);
+
+19 
+Sock‘_Bšd
+(
+sock_fd
+, cÚ¡ *
+addr
+, 
+sockËn_t
+ 
+Ën
+);
+
+20 
+Sock‘_Li¡’
+(
+sock_fd
+, 
+backlog
+);
+
+21 
+R—d
+();
+
+22 * 
+PrÙocÞ_P¬£
+();
+
+23 * 
+Sock‘_Rev
+();
+
+24 
+Di¥Ïy
+();
+
+	@
+1
+.
+0
+4
+151
+D:\work\zhuyunchuanstudy\socket\main.c
+D:\work\zhuyunchuanstudy\socket\socket_server.c
+D:\work\zhuyunchuanstudy\socket\socket_server.h
+socket_server.h
