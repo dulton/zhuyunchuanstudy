@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BACKLOG	.\socket_server.h	12;"	d
+Display	.\socket_server.c	/^int Display(void* buf)$/;"	f
+Listen	.\socket_server.c	/^int Listen(int sock_fd, int backlog)$/;"	f
+MAX_CONNECTION	.\socket_server.h	13;"	d
+Protocol_Parse	.\socket_server.c	/^void* Protocol_Parse(void* fd)$/;"	f
+Read	.\socket_server.c	/^ssize_t Read(int filedes, void *buf, size_t nbytes)$/;"	f
+SERVER_PORT	.\socket_server.h	11;"	d
+SOCKET_SERVER_H	.\socket_server.h	2;"	d
+Socket_Bind	.\socket_server.c	/^int Socket_Bind(int sock_fd, const struct sockaddr *addr, socklen_t len)$/;"	f
+Socket_Close	.\socket_server.c	/^int Socket_Close(int sock_fd)$/;"	f
+Socket_Create	.\socket_server.c	/^int Socket_Create(int domain, int type, int protocol)$/;"	f
+client_addr	.\socket_server.c	/^struct sockaddr_in client_addr;$/;"	v	typeref:struct:sockaddr_in
+server_addr	.\socket_server.c	/^struct sockaddr_in server_addr;$/;"	v	typeref:struct:sockaddr_in
+sockfd_client	.\socket_server.c	/^int sockfd_client;$/;"	v
+sockfd_server	.\socket_server.c	/^int sockfd_server;$/;"	v

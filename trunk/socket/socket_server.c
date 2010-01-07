@@ -6,7 +6,7 @@ int sockfd_server;
 struct sockaddr_in client_addr;
 struct sockaddr_in server_addr;
 
-//建立套接字连接
+//建立套接字
 int Socket_Create(int domain, int type, int protocol)
 {
 	unlink("sockfd_server");
@@ -82,11 +82,12 @@ ssize_t Read(int filedes, void *buf, size_t nbytes)
 }
 
 //协议解析,解析收到的包，并提取body中内容
-void* Protocol_Parse(void* fd)
+/*void* Protocol_Parse(void* fd)
 {
 	void* fd_tmp = fd;
 
 }
+*/
 
 //打印内容
 int Display(void* buf)
