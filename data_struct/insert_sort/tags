@@ -1,0 +1,83 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DECLS_BEGIN	typedef.h	54;"	d
+DECLS_BEGIN	typedef.h	57;"	d
+DECLS_END	typedef.h	55;"	d
+DECLS_END	typedef.h	58;"	d
+DLIST_H	dlist.h	36;"	d
+DList	dlist.h	/^typedef struct _DList DList;$/;"	t	typeref:struct:_DList
+DListNode	dlist.c	/^}DListNode;$/;"	t	typeref:struct:_DListNode	file:
+DataCompareFunc	typedef.h	/^typedef int      (*DataCompareFunc)(void* ctx, void* data);$/;"	t
+DataDestroyFunc	typedef.h	/^typedef void     (*DataDestroyFunc)(void* ctx, void* data);$/;"	t
+DataHashFunc	typedef.h	/^typedef int       (*DataHashFunc)(void* data);$/;"	t
+DataVisitFunc	typedef.h	/^typedef Ret      (*DataVisitFunc)(void* ctx, void* data);$/;"	t
+INSERTSORITNG_H	insert_sorting.h	2;"	d
+NR	dlist.c	446;"	d	file:
+RET_FAIL	typedef.h	/^	RET_FAIL$/;"	e	enum:_Ret
+RET_INVALID_PARAMS	typedef.h	/^	RET_INVALID_PARAMS,$/;"	e	enum:_Ret
+RET_OK	typedef.h	/^	RET_OK,$/;"	e	enum:_Ret
+RET_OOM	typedef.h	/^	RET_OOM,$/;"	e	enum:_Ret
+RET_STOP	typedef.h	/^	RET_STOP,$/;"	e	enum:_Ret
+Ret	typedef.h	/^}Ret;$/;"	t	typeref:enum:_Ret
+SAFE_FREE	typedef.h	68;"	d
+SortFunc	typedef.h	/^typedef Ret (*SortFunc)(void** array, size_t nr, DataCompareFunc cmp);$/;"	t
+TYPEDEF_H	typedef.h	37;"	d
+_DList	dlist.c	/^struct _DList$/;"	s	file:
+_DList::data_destroy	dlist.c	/^	DataDestroyFunc data_destroy;$/;"	m	struct:_DList	file:	access:public
+_DList::data_destroy_ctx	dlist.c	/^	void* data_destroy_ctx;$/;"	m	struct:_DList	file:	access:public
+_DList::first	dlist.c	/^	DListNode* first;$/;"	m	struct:_DList	file:	access:public
+_DListNode	dlist.c	/^typedef struct _DListNode$/;"	s	file:
+_DListNode::data	dlist.c	/^	void* data;$/;"	m	struct:_DListNode	file:	access:public
+_DListNode::next	dlist.c	/^	struct _DListNode* next;$/;"	m	struct:_DListNode	typeref:struct:_DListNode::_DListNode	file:	access:public
+_DListNode::prev	dlist.c	/^	struct _DListNode* prev;$/;"	m	struct:_DListNode	typeref:struct:_DListNode::_DListNode	file:	access:public
+_Ret	typedef.h	/^typedef enum _Ret$/;"	g
+check_and_dec_int	dlist.c	/^static Ret check_and_dec_int(void* ctx, void* data)$/;"	f	file:	signature:(void* ctx, void* data)
+cmp_int	dlist.c	/^static int cmp_int(void* ctx, void* data)$/;"	f	file:	signature:(void* ctx, void* data)
+consumer	dlist.c	/^static void* consumer(void* param)$/;"	f	file:	signature:(void* param)
+data	dlist.c	/^	void* data;$/;"	m	struct:_DListNode	file:	access:public
+data_destroy	dlist.c	/^	DataDestroyFunc data_destroy;$/;"	m	struct:_DList	file:	access:public
+data_destroy_ctx	dlist.c	/^	void* data_destroy_ctx;$/;"	m	struct:_DList	file:	access:public
+dlist_append	dlist.c	/^Ret dlist_append(DList* thiz, void* data)$/;"	f	signature:(DList* thiz, void* data)
+dlist_append	dlist.h	/^Ret dlist_append(DList* thiz, void* data);$/;"	p	signature:(DList* thiz, void* data)
+dlist_create	dlist.c	/^DList* dlist_create(DataDestroyFunc data_destroy, void* ctx)$/;"	f	signature:(DataDestroyFunc data_destroy, void* ctx)
+dlist_create	dlist.h	/^DList* dlist_create(DataDestroyFunc data_destroy, void* ctx);$/;"	p	signature:(DataDestroyFunc data_destroy, void* ctx)
+dlist_create_node	dlist.c	/^static DListNode* dlist_create_node(DList* thiz, void* data)$/;"	f	file:	signature:(DList* thiz, void* data)
+dlist_delete	dlist.c	/^Ret dlist_delete(DList* thiz, size_t index)$/;"	f	signature:(DList* thiz, size_t index)
+dlist_delete	dlist.h	/^Ret dlist_delete(DList* thiz, size_t index);$/;"	p	signature:(DList* thiz, size_t index)
+dlist_destroy	dlist.c	/^void dlist_destroy(DList* thiz)$/;"	f	signature:(DList* thiz)
+dlist_destroy	dlist.h	/^void dlist_destroy(DList* thiz);$/;"	p	signature:(DList* thiz)
+dlist_destroy_data	dlist.c	/^static void dlist_destroy_data(DList* thiz, void* data)$/;"	f	file:	signature:(DList* thiz, void* data)
+dlist_destroy_node	dlist.c	/^static void dlist_destroy_node(DList* thiz, DListNode* node)$/;"	f	file:	signature:(DList* thiz, DListNode* node)
+dlist_find	dlist.c	/^int      dlist_find(DList* thiz, DataCompareFunc cmp, void* ctx)$/;"	f	signature:(DList* thiz, DataCompareFunc cmp, void* ctx)
+dlist_find	dlist.h	/^int      dlist_find(DList* thiz, DataCompareFunc cmp, void* ctx);$/;"	p	signature:(DList* thiz, DataCompareFunc cmp, void* ctx)
+dlist_foreach	dlist.c	/^Ret dlist_foreach(DList* thiz, DataVisitFunc visit, void* ctx)$/;"	f	signature:(DList* thiz, DataVisitFunc visit, void* ctx)
+dlist_foreach	dlist.h	/^Ret      dlist_foreach(DList* thiz, DataVisitFunc visit, void* ctx);$/;"	p	signature:(DList* thiz, DataVisitFunc visit, void* ctx)
+dlist_get_by_index	dlist.c	/^Ret dlist_get_by_index(DList* thiz, size_t index, void** data)$/;"	f	signature:(DList* thiz, size_t index, void** data)
+dlist_get_by_index	dlist.h	/^Ret dlist_get_by_index(DList* thiz, size_t index, void** data);$/;"	p	signature:(DList* thiz, size_t index, void** data)
+dlist_get_node	dlist.c	/^static DListNode* dlist_get_node(DList* thiz, size_t index, int fail_return_last)$/;"	f	file:	signature:(DList* thiz, size_t index, int fail_return_last)
+dlist_insert	dlist.c	/^Ret dlist_insert(DList* thiz, size_t index, void* data)$/;"	f	signature:(DList* thiz, size_t index, void* data)
+dlist_insert	dlist.h	/^Ret dlist_insert(DList* thiz, size_t index, void* data);$/;"	p	signature:(DList* thiz, size_t index, void* data)
+dlist_length	dlist.c	/^size_t dlist_length(DList* thiz)$/;"	f	signature:(DList* thiz)
+dlist_length	dlist.h	/^size_t   dlist_length(DList* thiz);$/;"	p	signature:(DList* thiz)
+dlist_prepend	dlist.c	/^Ret dlist_prepend(DList* thiz, void* data)$/;"	f	signature:(DList* thiz, void* data)
+dlist_prepend	dlist.h	/^Ret dlist_prepend(DList* thiz, void* data);$/;"	p	signature:(DList* thiz, void* data)
+dlist_set_by_index	dlist.c	/^Ret dlist_set_by_index(DList* thiz, size_t index, void* data)$/;"	f	signature:(DList* thiz, size_t index, void* data)
+dlist_set_by_index	dlist.h	/^Ret dlist_set_by_index(DList* thiz, size_t index, void* data);$/;"	p	signature:(DList* thiz, size_t index, void* data)
+first	dlist.c	/^	DListNode* first;$/;"	m	struct:_DList	file:	access:public
+insertsort	insert_sorting.h	/^void insertsort(void* array[], int len);$/;"	p	signature:(void* array[], int len)
+main	dlist.c	/^int main(int argc, char* argv[])$/;"	f	signature:(int argc, char* argv[])
+multi_thread_test	dlist.c	/^static void multi_thread_test(void)$/;"	f	file:	signature:(void)
+next	dlist.c	/^	struct _DListNode* next;$/;"	m	struct:_DListNode	typeref:struct:_DListNode::_DListNode	file:	access:public
+prev	dlist.c	/^	struct _DListNode* prev;$/;"	m	struct:_DListNode	typeref:struct:_DListNode::_DListNode	file:	access:public
+print_int	dlist.c	/^static Ret print_int(void* ctx, void* data)$/;"	f	file:	signature:(void* ctx, void* data)
+producer	dlist.c	/^static void* producer(void* param)$/;"	f	file:	signature:(void* param)
+reader	dlist.c	/^static void* reader(void* param)$/;"	f	file:	signature:(void* param)
+return_if_fail	typedef.h	61;"	d
+return_val_if_fail	typedef.h	64;"	d
+single_thread_test	dlist.c	/^static void single_thread_test(void)$/;"	f	file:	signature:(void)
+test_int_dlist	dlist.c	/^static void test_int_dlist(void)$/;"	f	file:	signature:(void)
+test_invalid_params	dlist.c	/^static void test_invalid_params(void)$/;"	f	file:	signature:(void)
