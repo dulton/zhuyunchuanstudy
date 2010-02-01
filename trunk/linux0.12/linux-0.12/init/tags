@@ -1,0 +1,76 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BCD_TO_BIN	.\main.c	90;"	d	file:
+CMOS_READ	.\main.c	85;"	d	file:
+CON_COLS	.\main.c	73;"	d	file:
+CON_ROWS	.\main.c	72;"	d	file:
+DRIVE_INFO	.\main.c	74;"	d	file:
+EXT_MEM_K	.\main.c	71;"	d	file:
+L65	.\main.s	/^L65:$/;"	l
+L69	.\main.s	/^L69:$/;"	l
+L70	.\main.s	/^L70:$/;"	l
+L71	.\main.s	/^L71:$/;"	l
+L72	.\main.s	/^L72:$/;"	l
+L74	.\main.s	/^L74:$/;"	l
+L75	.\main.s	/^L75:$/;"	l
+L77	.\main.s	/^L77:$/;"	l
+L82	.\main.s	/^L82:$/;"	l
+L84	.\main.s	/^L84:$/;"	l
+L85	.\main.s	/^L85:$/;"	l
+L86	.\main.s	/^L86:$/;"	l
+L87	.\main.s	/^L87:$/;"	l
+L88	.\main.s	/^L88:$/;"	l
+L89	.\main.s	/^L89:$/;"	l
+L91	.\main.s	/^L91:$/;"	l
+L93	.\main.s	/^L93:$/;"	l
+L94	.\main.s	/^L94:$/;"	l
+L96	.\main.s	/^L96:$/;"	l
+L97	.\main.s	/^L97:$/;"	l
+LC0	.\main.s	/^LC0:$/;"	l
+LC1	.\main.s	/^LC1:$/;"	l
+LC10	.\main.s	/^LC10:$/;"	l
+LC11	.\main.s	/^LC11:$/;"	l
+LC2	.\main.s	/^LC2:$/;"	l
+LC3	.\main.s	/^LC3:$/;"	l
+LC4	.\main.s	/^LC4:$/;"	l
+LC5	.\main.s	/^LC5:$/;"	l
+LC6	.\main.s	/^LC6:$/;"	l
+LC7	.\main.s	/^LC7:$/;"	l
+LC8	.\main.s	/^LC8:$/;"	l
+LC9	.\main.s	/^LC9:$/;"	l
+ORIG_ROOT_DEV	.\main.c	75;"	d	file:
+ORIG_SWAP_DEV	.\main.c	76;"	d	file:
+__LIBRARY__	.\main.c	7;"	d	file:
+_argv	.\main.s	/^_argv:$/;"	l
+_argv_rc	.\main.s	/^_argv_rc:$/;"	l
+_buffer_memory_end	.\main.s	/^_buffer_memory_end:$/;"	l
+_envp	.\main.s	/^_envp:$/;"	l
+_envp_rc	.\main.s	/^_envp_rc:$/;"	l
+_init	.\main.s	/^_init:$/;"	l
+_main	.\main.s	/^_main:$/;"	l
+_main_memory_start	.\main.s	/^_main_memory_start:$/;"	l
+_memory_end	.\main.s	/^_memory_end:$/;"	l
+_printf	.\main.s	/^_printf:$/;"	l
+_sprintf	.\main.s	/^_sprintf:$/;"	l
+_time_init	.\main.s	/^_time_init:$/;"	l
+argv	.\main.c	/^static char * argv[] = { "-\/bin\/sh",NULL };$/;"	v	file:
+argv_rc	.\main.c	/^static char * argv_rc[] = { "\/bin\/sh", NULL };$/;"	v	file:
+buffer_memory_end	.\main.c	/^static long buffer_memory_end = 0;$/;"	v	file:
+drive_info	.\main.c	/^struct drive_info { char dummy[32]; } drive_info;$/;"	s	file:
+drive_info	.\main.c	/^struct drive_info { char dummy[32]; } drive_info;$/;"	v	typeref:struct:drive_info
+dummy	.\main.c	/^struct drive_info { char dummy[32]; } drive_info;$/;"	m	struct:drive_info	file:
+envp	.\main.c	/^static char * envp[] = { "HOME=\/usr\/root", NULL, NULL };$/;"	v	file:
+envp_rc	.\main.c	/^static char * envp_rc[] = { "HOME=\/", NULL ,NULL };$/;"	v	file:
+init	.\main.c	/^void init(void)$/;"	f
+main	.\main.c	/^void main(void)		\/* This really IS void, no error here. *\/$/;"	f
+main_memory_start	.\main.c	/^static long main_memory_start = 0;$/;"	v	file:
+memory_end	.\main.c	/^static long memory_end = 0;$/;"	v	file:
+printbuf	.\main.c	/^static char printbuf[1024];$/;"	v	file:
+printf	.\main.c	/^static int printf(const char *fmt, ...)$/;"	f	file:
+sprintf	.\main.c	/^static int sprintf(char * str, const char *fmt, ...)$/;"	f	file:
+term	.\main.c	/^static char term[32];$/;"	v	file:
+time_init	.\main.c	/^static void time_init(void)$/;"	f	file:

@@ -1,0 +1,850 @@
+cscope 16 D:\work\zhuyunchuanstudy\linux0.12\linux-0.12\init"               0000004692
+	@D:\work\zhuyunchuanstudy\linux0.12\linux-0.12\init\main.c
+
+7 
+	#__LIBRARY__
+
+
+	)
+
+8 
+	~<uni¡d.h
+>
+
+9 
+	~<time.h
+>
+
+23 
+šlše
+ 
+	$_sysÿÎ0
+(,
+fÜk
+)
+
+24 
+šlše
+ 
+	$_sysÿÎ0
+(,
+·u£
+)
+
+25 
+šlše
+ 
+	$_sysÿÎ1
+(,
+£tup
+,*,
+BIOS
+)
+
+26 
+šlše
+ 
+	$_sysÿÎ0
+(,
+sync
+)
+
+28 
+	~<lšux/‰y.h
+>
+
+29 
+	~<lšux/sched.h
+>
+
+30 
+	~<lšux/h—d.h
+>
+
+31 
+	~<asm/sy¡em.h
+>
+
+32 
+	~<asm/io.h
+>
+
+34 
+	~<¡ddef.h
+>
+
+35 
+	~<¡d¬g.h
+>
+
+36 
+	~<uni¡d.h
+>
+
+37 
+	~<fúŽ.h
+>
+
+38 
+	~<sys/ty³s.h
+>
+
+40 
+	~<lšux/fs.h
+>
+
+42 
+	~<¡ršg.h
+>
+
+44 
+´štbuf
+[1024];
+
+46 *
+	`¡rýy
+();
+
+47 
+	`v¥rštf
+();
+
+48 
+	`š™
+();
+
+49 
+	`blk_dev_š™
+();
+
+50 
+	`chr_dev_š™
+();
+
+51 
+	`hd_š™
+();
+
+52 
+	`æÝpy_š™
+();
+
+53 
+	`mem_š™
+(
+¡¬t
+, 
+’d
+);
+
+54 
+	`rd_š™
+(
+mem_¡¬t
+, 
+Ëngth
+);
+
+55 
+	`k”Ãl_mktime
+(
+tm
+ *m);
+
+57 
+	$¥rštf
+(* 
+¡r
+, cÚ¡ *
+fmt
+, ...)
+
+59 
+va_li¡
+ 
+¬gs
+;
+
+60 
+i
+;
+
+62 
+	`va_¡¬t
+(
+¬gs
+, 
+fmt
+);
+
+63 
+i
+ = 
+	`v¥rštf
+(
+¡r
+, 
+fmt
+, 
+¬gs
+);
+
+64 
+	`va_’d
+(
+¬gs
+);
+
+65  
+i
+;
+
+66 
+	}
+}
+
+71 
+	#EXT_MEM_K
+ (*(*)0x90002)
+
+	)
+
+72 
+	#CON_ROWS
+ ((*(*)0x9000eè& 0xff)
+
+	)
+
+73 
+	#CON_COLS
+ (((*(*)0x9000eè& 0xff00è>> 8)
+
+	)
+
+74 
+	#DRIVE_INFO
+ (*(
+drive_šfo
+ *)0x90080)
+
+	)
+
+75 
+	#ORIG_ROOT_DEV
+ (*(*)0x901FC)
+
+	)
+
+76 
+	#ORIG_SWAP_DEV
+ (*(*)0x901FA)
+
+	)
+
+85 
+	#CMOS_READ
+(
+addr
+) ({ \
+
+86 
+	`outb_p
+(0x80|
+addr
+,0x70); \
+
+87 
+	`šb_p
+(0x71); \
+
+88 })
+
+	)
+
+90 
+	#BCD_TO_BIN
+(
+v®
+è((v®)=((v®)&15è+ ((v®)>>4)*10)
+
+	)
+
+92 
+	$time_š™
+()
+
+94 
+tm
+ 
+time
+;
+
+97 
+time
+.
+tm_£c
+ = 
+	`CMOS_READ
+(0);
+
+98 
+time
+.
+tm_mš
+ = 
+	`CMOS_READ
+(2);
+
+99 
+time
+.
+tm_hour
+ = 
+	`CMOS_READ
+(4);
+
+100 
+time
+.
+tm_mday
+ = 
+	`CMOS_READ
+(7);
+
+101 
+time
+.
+tm_mÚ
+ = 
+	`CMOS_READ
+(8);
+
+102 
+time
+.
+tm_y—r
+ = 
+	`CMOS_READ
+(9);
+
+103 } 
+time
+.
+tm_£c
+ !ð
+	`CMOS_READ
+(0));
+
+104 
+	`BCD_TO_BIN
+(
+time
+.
+tm_£c
+);
+
+105 
+	`BCD_TO_BIN
+(
+time
+.
+tm_mš
+);
+
+106 
+	`BCD_TO_BIN
+(
+time
+.
+tm_hour
+);
+
+107 
+	`BCD_TO_BIN
+(
+time
+.
+tm_mday
+);
+
+108 
+	`BCD_TO_BIN
+(
+time
+.
+tm_mÚ
+);
+
+109 
+	`BCD_TO_BIN
+(
+time
+.
+tm_y—r
+);
+
+110 
+time
+.
+tm_mÚ
+--;
+
+111 
+¡¬tup_time
+ = 
+	`k”Ãl_mktime
+(&
+time
+);
+
+112 
+	}
+}
+
+114 
+	gmemÜy_’d
+ = 0;
+
+115 
+	gbufãr_memÜy_’d
+ = 0;
+
+116 
+	gmaš_memÜy_¡¬t
+ = 0;
+
+117 
+	g‹rm
+[32];
+
+119 * 
+	g¬gv_rc
+[] = { "/bš/sh", 
+NULL
+ };
+
+120 * 
+	g’vp_rc
+[] = { "HOME=/", 
+NULL
+ ,NULL };
+
+122 * 
+	g¬gv
+[] = { "-/bš/sh",
+NULL
+ };
+
+123 * 
+	g’vp
+[] = { "HOME=/u¤/roÙ", 
+NULL
+, NULL };
+
+125 
+	sdrive_šfo
+ { 
+	mdummy
+[32]; } 
+	gdrive_šfo
+;
+
+127 
+	$maš
+()
+
+133 
+ROOT_DEV
+ = 
+ORIG_ROOT_DEV
+;
+
+134 
+SWAP_DEV
+ = 
+ORIG_SWAP_DEV
+;
+
+135 
+	`¥rštf
+(
+‹rm
+, "TERM=cÚ%dx%d", 
+CON_COLS
+, 
+CON_ROWS
+);
+
+136 
+’vp
+[1] = 
+‹rm
+;
+
+137 
+’vp_rc
+[1] = 
+‹rm
+;
+
+138 
+drive_šfo
+ = 
+DRIVE_INFO
+;
+
+139 
+memÜy_’d
+ = (1<<20è+ (
+EXT_MEM_K
+<<10);
+
+140 
+memÜy_’d
+ &= 0xfffff000;
+
+141 ià(
+memÜy_’d
+ > 16*1024*1024)
+
+142 
+memÜy_’d
+ = 16*1024*1024;
+
+143 ià(
+memÜy_’d
+ > 12*1024*1024)
+
+144 
+bufãr_memÜy_’d
+ = 4*1024*1024;
+
+145 ià(
+memÜy_’d
+ > 6*1024*1024)
+
+146 
+bufãr_memÜy_’d
+ = 2*1024*1024;
+
+148 
+bufãr_memÜy_’d
+ = 1*1024*1024;
+
+149 
+maš_memÜy_¡¬t
+ = 
+bufãr_memÜy_’d
+;
+
+150 #ifdeà
+RAMDISK
+
+
+151 
+maš_memÜy_¡¬t
+ +ð
+	`rd_š™
+(maš_memÜy_¡¬t, 
+RAMDISK
+*1024);
+
+153 
+	`mem_š™
+(
+maš_memÜy_¡¬t
+,
+memÜy_’d
+);
+
+154 
+	`Œ­_š™
+();
+
+155 
+	`blk_dev_š™
+();
+
+156 
+	`chr_dev_š™
+();
+
+157 
+	`‰y_š™
+();
+
+158 
+	`time_š™
+();
+
+159 
+	`sched_š™
+();
+
+160 
+	`bufãr_š™
+(
+bufãr_memÜy_’d
+);
+
+161 
+	`hd_š™
+();
+
+162 
+	`æÝpy_š™
+();
+
+163 
+	`¡i
+();
+
+164 
+	`move_to_u£r_mode
+();
+
+165 ià(!
+	`fÜk
+()) {
+
+166 
+	`š™
+();
+
+176 
+	`__asm__
+("šˆ$0x80"::"a" (
+__NR_·u£
+):"ax");
+
+177 
+	}
+}
+
+179 
+	$´štf
+(cÚ¡ *
+fmt
+, ...)
+
+181 
+va_li¡
+ 
+¬gs
+;
+
+182 
+i
+;
+
+184 
+	`va_¡¬t
+(
+¬gs
+, 
+fmt
+);
+
+185 
+	`wr™e
+(1,
+´štbuf
+,
+i
+=
+	`v¥rštf
+Õrštbuf, 
+fmt
+, 
+¬gs
+));
+
+186 
+	`va_’d
+(
+¬gs
+);
+
+187  
+i
+;
+
+188 
+	}
+}
+
+190 
+	$š™
+()
+
+192 
+pid
+,
+i
+;
+
+194 
+	`£tup
+((*è&
+drive_šfo
+);
+
+195 (è
+	`Ý’
+("/dev/‰y1",
+O_RDWR
+,0);
+
+196 (è
+	`dup
+(0);
+
+197 (è
+	`dup
+(0);
+
+198 
+	`´štf
+("%d bufãr ð%d by‹ bufã¸¥aû\n\r",
+NR_BUFFERS
+,
+
+199 
+NR_BUFFERS
+*
+BLOCK_SIZE
+);
+
+200 
+	`´štf
+("F»mem: %d by‹s\n\r",
+memÜy_’d
+-
+maš_memÜy_¡¬t
+);
+
+201 ià(!(
+pid
+=
+	`fÜk
+())) {
+
+202 
+	`þo£
+(0);
+
+203 ià(
+	`Ý’
+("/‘c/rc",
+O_RDONLY
+,0))
+
+204 
+	`_ex™
+(1);
+
+205 
+	`execve
+("/bš/sh",
+¬gv_rc
+,
+’vp_rc
+);
+
+206 
+	`_ex™
+(2);
+
+208 ià(
+pid
+>0)
+
+209 
+pid
+ !ð
+	`wa™
+(&
+i
+))
+
+212 ià((
+pid
+=
+	`fÜk
+())<0) {
+
+213 
+	`´štf
+("Fork failed in init\r\n");
+
+216 ià(!
+pid
+) {
+
+217 
+	`þo£
+(0);close(1);close(2);
+
+218 
+	`£tsid
+();
+
+219 (è
+	`Ý’
+("/dev/‰y1",
+O_RDWR
+,0);
+
+220 (è
+	`dup
+(0);
+
+221 (è
+	`dup
+(0);
+
+222 
+	`_ex™
+(
+	`execve
+("/bš/sh",
+¬gv
+,
+’vp
+));
+
+225 ià(
+pid
+ =ð
+	`wa™
+(&
+i
+))
+
+227 
+	`´štf
+("\n\rchžd %d d›d w™h cod%04x\n\r",
+pid
+,
+i
+);
+
+228 
+	`sync
+();
+
+230 
+	`_ex™
+(0);
+
+231 
+	}
+}
+
+	@
+1
+.
+0
+1
+58
+D:\work\zhuyunchuanstudy\linux0.12\linux-0.12\init\main.c
