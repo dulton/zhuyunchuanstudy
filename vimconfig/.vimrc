@@ -192,3 +192,6 @@ let g:DoxygenToolkit_paramTag_pre = "@param\t"
 let g:DoxygenToolkit_returnTag = "@return\t"
 let g:DoxygenToolkit_briefTag_funcName = "no"
 let g:DoxygenToolkit_maxFunctionProtoLines = 30
+"minibufconfig
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplMapWindowNavVim = 1	"can use <C-h,j,k.l> to move betwen buffer 
