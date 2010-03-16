@@ -7,6 +7,10 @@
 
 #ifndef UART_H_
 #define UART_H_
+#define COM1 "/dev/ttyS0"
+#define COM2 "/dev/ttyS1"
+#define COM3 "/dev/ttyS2"
+#define _POSIX_SOURCE 1
 
 typedef enum RET_VALUE
 {
@@ -17,16 +21,11 @@ typedef enum RET_VALUE
 	RET_INIT_FAIL,
 }RET;
 
-typedef enum _COM_NUM COM_NUM;
 struct _GPS_MSG;
 typedef struct _GPS_MSG GPS_MSG;
 
-struct UART_ATTRIBUTE
-{
-
-};
-struct GPS_MSG *uart_read(COM_NUM com);
-RET uart_create(COM_NUM com);
-RET uart_destory(COM_NUM com);
-RET uart_setattr(struct UART_ATTRIBUTE, COM_NUM com);
+struct GPS_MSG *uart_read();
+RET uart_create();
+RET uart_destory();
+//RET uart_setattr(struct termio, );
 #endif /* UART_H_ */

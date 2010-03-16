@@ -9,11 +9,23 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <fcntl.h>
+#include <termios.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <assert.h>
+#define _POSIX_SOURCE 1
 
-static void* uart_process(COM_NUM com)
+static void* uart_process()
 {
-	uart_setattr(UART_ATTRIBUTE, com);
-	uart_create(com);
+    RET ret = RET_OPEN_FAIL;
+
+    assert(RET_OK == ret);
+
+	while(1)
+	{
+	    uart_read();
+	}
 }
 int main(int argc, char **argv)
 {
