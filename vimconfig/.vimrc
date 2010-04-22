@@ -49,7 +49,7 @@ set incsearch		" Incremental search
 set mouse=a		" Enable mouse usage (all modes)
 
 " Source a global configuration file if available
-if filereadable("/etc/vim/vimrc.local")
+if filereadable("etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
@@ -143,8 +143,8 @@ function Do_CsTag()
         endif
     endif
     if(executable('ctags'))
-        "silent! execute "!ctags -R šCc-types=+p šCfields=+S *"
-        silent! execute "!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q ."
+        silent! execute "!ctags -R --c-types=+p --fields=+S *"
+        "silent! execute !ctags -R --c++-kinds=+p --fields=+iaS --extra=+q ."
     endif
     if(executable('cscope') && has("cscope") )
         if(g:iswindows!=1)
@@ -182,6 +182,11 @@ let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 "winmanager
 let g:winManagerWindowLayout='FileExplorer|TagList'
 nmap wm :WMToggle<cr>
+"minibug设置
+let g:miniBufExplTabWrap=1
+let g:miniBufExplModSelTarget=1
+let g:miniBufExplMapWindowNavVim=1
+let g:miniBufExplMapCTabSwitchBufs = 1
 "自动注释设置
 map fg : Dox<cr>
 let g:DoxygenToolkit_authorName="dantezhu"
@@ -192,6 +197,5 @@ let g:DoxygenToolkit_paramTag_pre = "@param\t"
 let g:DoxygenToolkit_returnTag = "@return\t"
 let g:DoxygenToolkit_briefTag_funcName = "no"
 let g:DoxygenToolkit_maxFunctionProtoLines = 30
-"minibufconfig
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplMapWindowNavVim = 1	"can use <C-h,j,k.l> to move betwen buffer 
+"设置ShowFunc
+map <F1> <Plug>ShowFunc
