@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DARRAY_H	.\darray.h	6;"	d
+DArray	.\darray.h	/^typedef struct _DArray DArray;$/;"	t	typeref:struct:_DArray
+DECLS_BEGIN	.\typedef.h	22;"	d
+DECLS_BEGIN	.\typedef.h	25;"	d
+DECLS_END	.\typedef.h	23;"	d
+DECLS_END	.\typedef.h	26;"	d
+DataCompareFunc	.\typedef.h	/^typedef int  (*DataCompareFunc)(void* ctx, void* data);$/;"	t
+DataDestroyFunc	.\typedef.h	/^typedef void (*DataDestroyFunc)(void* ctx, void* data);$/;"	t
+DataVisitFunc	.\typedef.h	/^typedef Ret	 (*DataVisitFunc)(void* ctx, void* data); $/;"	t
+RET_FAIL	.\typedef.h	/^	RET_FAIL,	$/;"	e	enum:_Ret
+RET_INVALID_PARAMS	.\typedef.h	/^	RET_INVALID_PARAMS,$/;"	e	enum:_Ret
+RET_OK	.\typedef.h	/^	RET_OK,$/;"	e	enum:_Ret
+RET_OOM	.\typedef.h	/^	RET_OOM,$/;"	e	enum:_Ret
+RET_STOP	.\typedef.h	/^	RET_STOP,$/;"	e	enum:_Ret
+Ret	.\typedef.h	/^}Ret;$/;"	t	typeref:enum:_Ret
+SAFE_FREE	.\typedef.h	35;"	d
+SortFunc	.\typedef.h	/^typedef Ret (*SortFunc)(void** array, size_t nr, DataCompareFunc cmp);$/;"	t
+TYPEDEF_H	.\typedef.h	6;"	d
+_DArray	.\darray.c	/^struct _DArray$/;"	s	file:
+_Ret	.\typedef.h	/^typedef enum _Ret$/;"	g
+alloc_size	.\darray.c	/^	size_t alloc_size;$/;"	m	struct:_DArray	file:
+data	.\darray.c	/^	void** data;$/;"	m	struct:_DArray	file:
+data_destroy	.\darray.c	/^	DataDestroyFunc data_destroy;$/;"	m	struct:_DArray	file:
+data_destroy_ctx	.\darray.c	/^	void* data_destroy_ctx;$/;"	m	struct:_DArray	file:
+return_if_fail	.\typedef.h	29;"	d
+return_val_if_fail	.\typedef.h	32;"	d
+size	.\darray.c	/^	size_t size;$/;"	m	struct:_DArray	file:

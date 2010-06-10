@@ -1,0 +1,609 @@
+cscope 16 H:\code\systerm_programmer\3_darray"               0000002970
+	@H:\code\systerm_programmer\3_darray\darray.c
+
+1 
+	~<¡dio.h
+>
+
+2 
+	~<as£¹.h
+>
+
+3 
+	~"d¬¿y.h
+"
+
+5 
+	s_DA¼ay
+
+
+7 ** 
+	md©a
+;
+
+8 
+size_t
+ 
+	msize
+;
+
+9 
+size_t
+ 
+	m®loc_size
+;
+
+11 * 
+	md©a_de¡roy_ùx
+;
+
+12 
+D©aDe¡royFunc
+ 
+	md©a_de¡roy
+;
+
+	@H:\code\systerm_programmer\3_darray\darray.h
+
+1 
+	~<ty³def.h
+>
+
+2 
+	~<¡dio.h
+>
+
+3 
+	~<¡dlib.h
+>
+
+5 #iâdeà
+DARRAY_H
+
+
+6 
+	#DARRAY_H
+
+
+	)
+
+8 
+DECLS_BEGIN
+
+
+10 
+	g_DA¼ay
+;
+
+11 
+_DA¼ay
+ 
+	tDA¼ay
+;
+
+13 
+DA¼ay
+* 
+d¬¿y_ü—‹
+(
+D©aDe¡royFunc
+ 
+d©a_de¡roy
+, * 
+ùx
+);
+
+15 
+R‘
+ 
+d¬¿y_š£¹
+(
+DA¼ay
+* 
+thiz
+, 
+size_t
+ 
+šdex
+, * 
+d©a
+);
+
+16 
+R‘
+ 
+d¬¿y_´•’d
+(
+DA¼ay
+* 
+thiz
+, * 
+d©a
+);
+
+17 
+R‘
+ 
+d¬¿y_­³nd
+(
+DA¼ay
+* 
+thiz
+, * 
+d©a
+);
+
+18 
+R‘
+ 
+d¬¿y_d–‘e
+(
+DA¼ay
+* 
+thiz
+, 
+size_t
+ 
+šdex
+);
+
+19 
+R‘
+ 
+d¬¿y_g‘_by_šdex
+(
+DA¼ay
+* 
+thiz
+, 
+size_t
+ 
+šdex
+, ** 
+d©a
+);
+
+20 
+R‘
+ 
+d¬¿y_£t_by_šdex
+(
+DA¼ay
+* 
+thiz
+, 
+size_t
+ 
+šdex
+, * 
+D©a
+);
+
+21 
+size_t
+ 
+d¬¿y_Ëngth
+(
+DA¼ay
+* 
+thiz
+);
+
+22 
+R‘
+ 
+d¬¿y_fšd
+(
+DA¼ay
+* 
+thiz
+, 
+D©aCom·»Func
+ 
+cmp
+, * 
+ùx
+);
+
+23 
+R‘
+ 
+d¬¿y_£¬ch
+(
+DA¼ay
+* 
+thiz
+, 
+D©aVi¡Func
+ 
+vis™
+, * 
+ùx
+);
+
+25 
+d¬¿y_de¡roy
+(
+DA¼ay
+* 
+thiz
+);
+
+27 
+	gDECLS_END
+
+
+	@H:\code\systerm_programmer\3_darray\typedef.h
+
+1 
+	~<¡dio.h
+>
+
+2 
+	~<¡dlib.h
+>
+
+3 
+	~<as£¹.h
+>
+
+5 #iâdeà
+TYPEDEF_H
+
+
+6 
+	#TYPEDEF_H
+
+
+	)
+
+8 
+	e_R‘
+
+
+10 
+	mRET_OK
+,
+
+11 
+	mRET_OOM
+,
+
+12 
+	mRET_STOP
+,
+
+13 
+	mRET_INVALID_PARAMS
+,
+
+14 
+	mRET_FAIL
+,
+
+15 }
+	tR‘
+;
+
+17 (*
+	tD©aDe¡royFunc
+)(* 
+	tùx
+, * 
+	td©a
+);
+
+18 (*
+	tD©aCom·»Func
+)(* 
+	tùx
+, * 
+	td©a
+);
+
+19 
+	$R‘
+ (*
+	tD©aVis™Func
+)(* 
+	tùx
+, * 
+	td©a
+);
+
+21 #ifdeà
+_ýlusýlus
+
+
+22 
+	#DECLS_BEGIN
+ "C" {
+
+	)
+
+23 
+	#DECLS_END
+ 
+	}
+
+	)
+}
+
+25 
+	#DECLS_BEGIN
+
+
+	)
+
+26 
+	#DECLS_END
+
+
+	)
+
+29 
+	#»tuº_if_çž
+(
+p
+) if(!(p)) \
+
+30 {
+	`´štf
+("%s,%d Warning: "#p" failed.\n",\
+
+31 
+__func__
+, 
+__LINE__
+); ;}
+
+	)
+
+32 
+	#»tuº_v®_if_çž
+(
+p
+) if(!(p)) \
+
+33 {
+	`´štf
+("%s,%d Warning: "#p" failed. \n", \
+
+34 
+__func__
+, 
+__LINE__
+); (
+»t
+);}
+
+	)
+
+35 
+	#SAFE_FREE
+(
+p
+èif(Õè!ð
+NULL
+è{
+	`ä“
+Õ);… = NULL;}
+
+	)
+
+37 
+	$R‘
+ (*
+	tSÜtFunc
+)(** 
+	t¬¿y
+, 
+	tsize_t
+ 
+	tÄ
+, 
+	tD©aCom·»Func
+ 
+	tcmp
+);
+
+	@darray.h
+
+1 
+	~<ty³def.h
+>
+
+2 
+	~<¡dio.h
+>
+
+3 
+	~<¡dlib.h
+>
+
+5 #iâdeà
+DARRAY_H
+
+
+6 
+	#DARRAY_H
+
+
+	)
+
+8 
+DECLS_BEGIN
+
+
+10 
+	g_DA¼ay
+;
+
+11 
+_DA¼ay
+ 
+	tDA¼ay
+;
+
+13 
+DA¼ay
+* 
+d¬¿y_ü—‹
+(
+D©aDe¡royFunc
+ 
+d©a_de¡roy
+, * 
+ùx
+);
+
+15 
+R‘
+ 
+d¬¿y_š£¹
+(
+DA¼ay
+* 
+thiz
+, 
+size_t
+ 
+šdex
+, * 
+d©a
+);
+
+16 
+R‘
+ 
+d¬¿y_´•’d
+(
+DA¼ay
+* 
+thiz
+, * 
+d©a
+);
+
+17 
+R‘
+ 
+d¬¿y_­³nd
+(
+DA¼ay
+* 
+thiz
+, * 
+d©a
+);
+
+18 
+R‘
+ 
+d¬¿y_d–‘e
+(
+DA¼ay
+* 
+thiz
+, 
+size_t
+ 
+šdex
+);
+
+19 
+R‘
+ 
+d¬¿y_g‘_by_šdex
+(
+DA¼ay
+* 
+thiz
+, 
+size_t
+ 
+šdex
+, ** 
+d©a
+);
+
+20 
+R‘
+ 
+d¬¿y_£t_by_šdex
+(
+DA¼ay
+* 
+thiz
+, 
+size_t
+ 
+šdex
+, * 
+D©a
+);
+
+21 
+size_t
+ 
+d¬¿y_Ëngth
+(
+DA¼ay
+* 
+thiz
+);
+
+22 
+R‘
+ 
+d¬¿y_fšd
+(
+DA¼ay
+* 
+thiz
+, 
+D©aCom·»Func
+ 
+cmp
+, * 
+ùx
+);
+
+23 
+R‘
+ 
+d¬¿y_£¬ch
+(
+DA¼ay
+* 
+thiz
+, 
+D©aVi¡Func
+ 
+vis™
+, * 
+ùx
+);
+
+25 
+d¬¿y_de¡roy
+(
+DA¼ay
+* 
+thiz
+);
+
+27 
+	gDECLS_END
+
+
+	@
+1
+.
+0
+4
+145
+H:\code\systerm_programmer\3_darray\darray.c
+H:\code\systerm_programmer\3_darray\darray.h
+H:\code\systerm_programmer\3_darray\typedef.h
+darray.h
