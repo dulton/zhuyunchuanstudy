@@ -57,6 +57,74 @@ static Ret darray_expand(DArray* thiz, size_t need)
 		
 		return  ((thiz->size) + need <= thiz->alloc_size) ? RET_OK : RET_FAIL;
 }
+<<<<<<< .mine
+
+Ret darray_insert(DArray* thiz, size_t index, void* data)
+{
+		return_val_if_fail(NULL != thiz, RET_INVALID_PARAMS);
+
+		Ret ret = RET_OOM;
+		size_t current = current < thiz->size ? current: thiz->size;
+
+		if(RET_OK == darray_expand(thiz, 1))
+		{
+				for(size_t i = thiz->size; i > current; i--)
+				{
+						thiz->data[i] = thiz->data[i-1];
+				}
+
+				thiz->data[current] = data;
+				thiz->size++;
+
+				ret = RET_OK;
+		}
+
+		return ret;
+}
+
+Ret darray_append(DArray* thiz, void* data)
+{
+		return_val_if_fail(NULL != thiz, RET_INVALID_PARAMS);
+		
+		RET ret = darray_insert(thiz, 0, data);
+
+		return ret;
+}
+
+Ret darray_prepend(DArray* thiz, void* data)
+{
+		return_val_if_fail(NULL != thiz, RET_INVALID_PARAMS);
+		
+		RET ret = darray_insert(thiz, thiz->size, data);
+
+		return ret;
+}
+
+void** darray_get_by_index(DArray* thiz, size_t index)
+{
+		void* val = NULL;
+
+		return_val_if_fail(NULL != thiz && index < thiz->size, RET_INVALID_PARAMS);
+
+		val = thiz->data[index];
+
+		return val;
+}
+
+Ret darray_set_by_index(DArray* thiz, size_t index, void* data)
+{
+		RET ret = RET_OOM;
+
+		return_val_if_fail(NULL != thiz && index < thiz->size, RET_INVALID_PARAMS);
+	
+		thiz->data[index] = data;
+
+		return RET_OK;
+}
+
+
+
+=======
 
 static Ret darray_shrink(DArray* thiz) 
 {
@@ -84,3 +152,4 @@ Ret darray_append(DArray* thiz, void* data)
 
 					
 }
+>>>>>>> .r21
