@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+DECLS_BEGIN	typedef.h	22;"	d
+DECLS_BEGIN	typedef.h	25;"	d
+DECLS_END	typedef.h	23;"	d
+DECLS_END	typedef.h	26;"	d
+DataCompareFunc	typedef.h	/^typedef int  (*DataCompareFunc)(void* ctx, void* data);$/;"	t
+DataDestroyFunc	typedef.h	/^typedef void (*DataDestroyFunc)(void* ctx, void* data);$/;"	t
+DataVisitFunc	typedef.h	/^typedef Ret	 (*DataVisitFunc)(void* ctx, void* data); $/;"	t
+Locker	pthreadlock.h	/^typedef struct _Locker Locker;$/;"	t	typeref:struct:_Locker
+LockerFunDestroy	pthreadlock.h	/^typedef void (*LockerFunDestroy)(Locker* thiz);$/;"	t
+LockerFunlock	pthreadlock.h	/^typedef RET (*LockerFunlock)(Locker* thiz);$/;"	t
+LockerFununlock	pthreadlock.h	/^typedef RET (*LockerFununlock)(Locker* thiz);$/;"	t
+PTHREADLOCK_H	pthreadlock.h	23;"	d
+Prvinfo	pthreadlock.c	/^typedef struct _Prvinfo Prvinfo;$/;"	t	typeref:struct:_Prvinfo	file:
+Pthread_Dsestroy	pthreadlock.h	/^static inline void Pthread_Dsestroy(Locker* thiz)$/;"	f	signature:(Locker* thiz)
+Pthread_Lock	pthreadlock.h	/^static inline RET Pthread_Lock(Locker* thiz)$/;"	f	signature:(Locker* thiz)
+Pthread_unLock	pthreadlock.h	/^static inline RET Pthread_unLock(Locker* thiz)$/;"	f	signature:(Locker* thiz)
+RET_FAIL	typedef.h	/^	RET_FAIL,	$/;"	e	enum:_Ret
+RET_INVALID_PARAMS	typedef.h	/^	RET_INVALID_PARAMS,$/;"	e	enum:_Ret
+RET_OK	typedef.h	/^	RET_OK,$/;"	e	enum:_Ret
+RET_OOM	typedef.h	/^	RET_OOM,$/;"	e	enum:_Ret
+RET_STOP	typedef.h	/^	RET_STOP,$/;"	e	enum:_Ret
+Ret	typedef.h	/^}Ret;$/;"	t	typeref:enum:_Ret
+SAFE_FREE	typedef.h	35;"	d
+SortFunc	typedef.h	/^typedef Ret (*SortFunc)(void** array, size_t nr, DataCompareFunc cmp);$/;"	t
+TYPEDEF_H	typedef.h	6;"	d
+_Locker	pthreadlock.h	/^struct _Locker$/;"	s
+_Prvinfo	pthreadlock.c	/^struct _Prvinfo$/;"	s	file:
+_Ret	typedef.h	/^typedef enum _Ret$/;"	g
+destroy	pthreadlock.h	/^		LockerFunDestroy destroy;$/;"	m	struct:_Locker
+lock	pthreadlock.h	/^		LockerFunlock lock;$/;"	m	struct:_Locker
+mutex	pthreadlock.c	/^		pthread_mutex_t mutex;$/;"	m	struct:_Prvinfo	file:
+prvin	pthreadlock.h	/^		char prvin[];$/;"	m	struct:_Locker
+return_if_fail	typedef.h	29;"	d
+return_val_if_fail	typedef.h	32;"	d
+unlock	pthreadlock.h	/^		LockerFununlock unlock;$/;"	m	struct:_Locker
