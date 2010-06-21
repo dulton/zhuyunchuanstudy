@@ -220,7 +220,7 @@ void init(void)
 			(void) dup(0);
 			(void) dup(0);
 			_exit(execve("/bin/sh",argv,envp));
-		}
+		}//如果pid = 0重新打开终端
 		while (1)
 			if (pid == wait(&i))
 				break;

@@ -60,7 +60,7 @@ extern int timer_interrupt(void);
 extern int system_call(void);
 
 union task_union {
-	struct task_struct task;
+	struct task_struct task;//任务的数据结构
 	char stack[PAGE_SIZE];
 };
 

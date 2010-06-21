@@ -444,7 +444,7 @@ void mem_init(long start_mem, long end_mem)
 {
 	int i;
 
-	HIGH_MEMORY = end_mem;
+	HIGH_MEMORY = end_mem; //end_mem表示内存大小
 	for (i=0 ; i<PAGING_PAGES ; i++)
 		mem_map[i] = USED;
 	i = MAP_NR(start_mem);
