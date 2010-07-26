@@ -3,6 +3,66 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.7	//
-read_sccb	ov7720.h	/^int read_sccb(unsigned char addr, unsigned char data);$/;"	p	signature:(unsigned char addr, unsigned char data)
-write_sccb	ov7720.h	/^int write_sccb(unsigned char addr, unsigned char data);$/;"	p	signature:(unsigned char addr, unsigned char data)
+!_TAG_PROGRAM_VERSION	5.8	//
+FuntionSccbRead	ov7720.h	/^typedef int (*FuntionSccbRead)(unsigned char addr, unsigned char data);$/;"	t
+FuntionSccbReset	ov7720.h	/^typedef int (*FuntionSccbReset)(void);$/;"	t
+FuntionSccbWrite	ov7720.h	/^typedef int (*FuntionSccbWrite)(unsigned char addr, unsigned char data);$/;"	t
+IPC_F4X35	ov7720_def.h	/^	IPC_F4X35,$/;"	e	enum:_DEVTYPE
+K6_RESET_PIN	ov7720_def.h	14;"	d
+K6_SCL_PIN	ov7720_def.h	12;"	d
+K6_SDA_PIN	ov7720_def.h	13;"	d
+NVS	ov7720_def.h	/^	NVS = 1,$/;"	e	enum:_DEVTYPE
+OV7720	ov7720.h	/^}OV7720;$/;"	t	typeref:struct:_OV7720
+OV7720_MAJOR	ov7720_driver.c	40;"	d	file:
+OV7720_MINOR	ov7720_driver.c	41;"	d	file:
+OV7720_NAME	ov7720_driver.c	39;"	d	file:
+OV7720_PID	ov7720_def.h	18;"	d
+OV7720_VER	ov7720_def.h	19;"	d
+RESET_PIN	ov7720.c	/^	RESET_PIN;$/;"	m	struct:ov7720_pin	file:	access:public
+RESET_PIN	ov7720.h	/^	RESET_PIN;$/;"	m	struct:ov7720_pin	access:public
+SCL_PIN	ov7720.c	/^	SCL_PIN;	$/;"	m	struct:ov7720_pin	file:	access:public
+SCL_PIN	ov7720.h	/^	SCL_PIN;	$/;"	m	struct:ov7720_pin	access:public
+SDA_PIN	ov7720.c	/^	SDA_PIN;$/;"	m	struct:ov7720_pin	file:	access:public
+SDA_PIN	ov7720.h	/^	SDA_PIN;$/;"	m	struct:ov7720_pin	access:public
+SLAVE_OV7720_ADDR	ov7720_def.h	16;"	d
+TIME_DELAY_US	gpio_i2c.c	23;"	d	file:
+_DEVTYPE	ov7720_def.h	/^typedef enum _DEVTYPE$/;"	g
+_OV7720	ov7720.h	/^typedef struct _OV7720$/;"	s
+_OV7720::pin	ov7720.h	/^	struct ov7720_pin pin;$/;"	m	struct:_OV7720	typeref:struct:_OV7720::ov7720_pin	access:public
+_OV7720::priv	ov7720.h	/^	void* priv;$/;"	m	struct:_OV7720	access:public
+_OV7720::read	ov7720.h	/^	FuntionSccbRead read;$/;"	m	struct:_OV7720	access:public
+_OV7720::reset	ov7720.h	/^	FuntionSccbReset reset;$/;"	m	struct:_OV7720	access:public
+_OV7720::write	ov7720.h	/^	FuntionSccbWrite write;$/;"	m	struct:_OV7720	access:public
+_OV7720_DEF_H	ov7720_def.h	10;"	d
+clock_ack	gpio_i2c.c	/^static int clock_ack(void)$/;"	f	file:	signature:(void)
+delay_us	gpio_i2c.c	/^static int delay_us(int ussec)$/;"	f	file:	signature:(int ussec)
+gpio_readbit	gpio_i2c.c	/^extern int gpio_readbit(int gio_num);$/;"	p	file:	signature:(int gio_num)
+gpio_writebit	gpio_i2c.c	/^extern int gpio_writebit(int gio_num, int value);$/;"	p	file:	signature:(int gio_num, int value)
+i2c_read	gpio_i2c.c	/^static unsigned char i2c_read(unsigned char dev_addr, unsigned char addr)$/;"	f	file:	signature:(unsigned char dev_addr, unsigned char addr)
+i2c_read_bit	gpio_i2c.c	/^static unsigned char i2c_read_bit(int dev_addr, int addr)$/;"	f	file:	signature:(int dev_addr, int addr)
+i2c_read_byte	gpio_i2c.c	/^static unsigned char i2c_read_byte(unsigned char addr)$/;"	f	file:	signature:(unsigned char addr)
+i2c_write	gpio_i2c.c	/^static int i2c_write(unsigned char dev_addr, unsigned char addr,unsigned char data)$/;"	f	file:	signature:(unsigned char dev_addr, unsigned char addr,unsigned char data)
+i2c_write_byte	gpio_i2c.c	/^static int i2c_write_byte(unsigned char data)$/;"	f	file:	signature:(unsigned char data)
+ov7720_create	ov7720.c	/^OV7720* ov7720_create(FuntionSccbRead read, $/;"	f	signature:(FuntionSccbRead read, FuntionSccbWrite write, FUnFuntionSccbReset reset, struct ov7720_pin pin)
+ov7720_create	ov7720.h	/^OV7720* ov7720_create(FuntionSccbRead read, FuntionSccbWrite write, FuntionSccbReset rest, struct ov7720_pin pin);$/;"	p	signature:(FuntionSccbRead read, FuntionSccbWrite write, FuntionSccbReset rest, struct ov7720_pin pin)
+ov7720_pin	ov7720.c	/^struct ov7720_pin$/;"	s	file:
+ov7720_pin	ov7720.h	/^struct ov7720_pin$/;"	s
+ov7720_pin::RESET_PIN	ov7720.c	/^	RESET_PIN;$/;"	m	struct:ov7720_pin	file:	access:public
+ov7720_pin::RESET_PIN	ov7720.h	/^	RESET_PIN;$/;"	m	struct:ov7720_pin	access:public
+ov7720_pin::SCL_PIN	ov7720.c	/^	SCL_PIN;	$/;"	m	struct:ov7720_pin	file:	access:public
+ov7720_pin::SCL_PIN	ov7720.h	/^	SCL_PIN;	$/;"	m	struct:ov7720_pin	access:public
+ov7720_pin::SDA_PIN	ov7720.c	/^	SDA_PIN;$/;"	m	struct:ov7720_pin	file:	access:public
+ov7720_pin::SDA_PIN	ov7720.h	/^	SDA_PIN;$/;"	m	struct:ov7720_pin	access:public
+pin	ov7720.h	/^	struct ov7720_pin pin;$/;"	m	struct:_OV7720	typeref:struct:_OV7720::ov7720_pin	access:public
+priv	ov7720.h	/^	void* priv;$/;"	m	struct:_OV7720	access:public
+read	ov7720.h	/^	FuntionSccbRead read;$/;"	m	struct:_OV7720	access:public
+read_sccb	gpio_i2c.h	/^int read_sccb(unsigned char addr, unsigned char data);$/;"	p	signature:(unsigned char addr, unsigned char data)
+recive_ack	gpio_i2c.c	/^static unsigned char recive_ack(void)$/;"	f	file:	signature:(void)
+reset	ov7720.h	/^	FuntionSccbReset reset;$/;"	m	struct:_OV7720	access:public
+set_ack	gpio_i2c.c	/^static int set_ack(void)$/;"	f	file:	signature:(void)
+set_high	gpio_i2c.c	/^static int set_high(unsigned char gpio_pin)$/;"	f	file:	signature:(unsigned char gpio_pin)
+set_low	gpio_i2c.c	/^static int set_low(unsigned char gpio_pin)$/;"	f	file:	signature:(unsigned char gpio_pin)
+set_start_bit	gpio_i2c.c	/^static int set_start_bit()$/;"	f	file:
+set_stop_bit	gpio_i2c.c	/^static int set_stop_bit()$/;"	f	file:
+write	ov7720.h	/^	FuntionSccbWrite write;$/;"	m	struct:_OV7720	access:public
+write_sccb	gpio_i2c.h	/^int write_sccb(unsigned char addr, unsigned char data);$/;"	p	signature:(unsigned char addr, unsigned char data)

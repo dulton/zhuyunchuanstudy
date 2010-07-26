@@ -22,12 +22,23 @@ typedef int (*FuntionSccbRead)(unsigned char addr, unsigned char data);
 typedef int (*FuntionSccbWrite)(unsigned char addr, unsigned char data);
 typedef int (*FuntionSccbReset)(void);
 
-struct OV7720
+
+struct ov7720_pin
 {
-	void* priv;
-	FuntionSccbRead sccb_read;
-	FuntionSccbWrite sccb_write;
-	FuntionSccbReset reset;
+	SCL_PIN;	
+	SDA_PIN;
+	RESET_PIN;
 };
 
-struct OV7720* ov7720_create();
+typedef struct _OV7720
+{
+	void* priv;
+	struct ov7720_pin pin;
+
+	FuntionSccbRead read;
+	FuntionSccbWrite write;
+	FuntionSccbReset reset;
+}OV7720;
+
+OV7720* ov7720_create(FuntionSccbRead read, FuntionSccbWrite write, FuntionSccbReset rest, struct ov7720_pin pin);
+
