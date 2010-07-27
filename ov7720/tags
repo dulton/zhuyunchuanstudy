@@ -3,66 +3,177 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_VERSION	5.7	//
+Auto_mode_set	src/ov7720dh.c	/^int Auto_mode_set(void)$/;"	f	signature:(void)
+BRIGHT_SET_CMD	src/ov7720.h	13;"	d
+Brightness_set	src/ov7720dh.c	/^int Brightness_set(unsigned int level)$/;"	f	signature:(unsigned int level)
+CONTRAST_SET_CMD	src/ov7720.h	15;"	d
+Cloudy_mode_set	src/ov7720dh.c	/^int Cloudy_mode_set(void)$/;"	f	signature:(void)
+Color_Saturation_set	src/ov7720dh.c	/^int Color_Saturation_set(unsigned int level)$/;"	f	signature:(unsigned int level)
+Contrast_set	src/ov7720dh.c	/^int Contrast_set(unsigned int level)$/;"	f	signature:(unsigned int level)
+DELAY	src/gpio_i2c.c	4;"	d	file:
+DEV_READ	src/ov7720.h	22;"	d
+DEV_WRITE	src/ov7720.h	23;"	d
+FLIP_SET_CMD	src/ov7720.h	20;"	d
 FuntionSccbRead	ov7720.h	/^typedef int (*FuntionSccbRead)(unsigned char addr, unsigned char data);$/;"	t
 FuntionSccbReset	ov7720.h	/^typedef int (*FuntionSccbReset)(void);$/;"	t
 FuntionSccbWrite	ov7720.h	/^typedef int (*FuntionSccbWrite)(unsigned char addr, unsigned char data);$/;"	t
+Home_mode_set	src/ov7720dh.c	/^int Home_mode_set(void)$/;"	f	signature:(void)
+Hz50_light_frequency_set	src/ov7720dh.c	/^int Hz50_light_frequency_set(void)$/;"	f	signature:(void)
+Hz60_light_frequency_set	src/ov7720dh.c	/^int Hz60_light_frequency_set(void)$/;"	f	signature:(void)
+IPC_A6	src/ov7720.h	31;"	d
+IPC_A7	src/ov7720.h	34;"	d
+IPC_A8	src/ov7720.h	32;"	d
 IPC_F4X35	ov7720_def.h	/^	IPC_F4X35,$/;"	e	enum:_DEVTYPE
+IPC_F4X35	src/ov7720.h	30;"	d
+IPC_F6X5	src/ov7720.h	47;"	d
+IPC_F715	src/ov7720.h	46;"	d
+IPC_F725	src/ov7720.h	35;"	d
+IPC_VM	src/ov7720.h	33;"	d
+IPVM5050F	src/ov7720.h	36;"	d
+IPVM5051F	src/ov7720.h	45;"	d
+K6	src/ov7720.h	37;"	d
 K6_RESET_PIN	ov7720_def.h	14;"	d
 K6_SCL_PIN	ov7720_def.h	12;"	d
 K6_SDA_PIN	ov7720_def.h	13;"	d
+K7	src/ov7720.h	38;"	d
+K8	src/ov7720.h	39;"	d
+K9	src/ov7720.h	40;"	d
+KERNELDIR	src/Makefile	/^KERNELDIR = \/share\/gao_changyan\/dm365kernel$/;"	m
+LIGHT_MODE_SET_CMD	src/ov7720.h	18;"	d
+MIRROR_SET_CMD	src/ov7720.h	19;"	d
 NVS	ov7720_def.h	/^	NVS = 1,$/;"	e	enum:_DEVTYPE
+NVS_C	src/ov7720.h	29;"	d
+NVS_XX04EF	src/ov7720.h	41;"	d
+NVS_XX04EH	src/ov7720.h	43;"	d
+NVS_XX04EM	src/ov7720.h	42;"	d
+Night_mode_set	src/ov7720dh.c	/^int Night_mode_set(void)$/;"	f	signature:(void)
 OV7720	ov7720.h	/^}OV7720;$/;"	t	typeref:struct:_OV7720
-OV7720_MAJOR	ov7720_driver.c	40;"	d	file:
-OV7720_MINOR	ov7720_driver.c	41;"	d	file:
-OV7720_NAME	ov7720_driver.c	39;"	d	file:
+OV7720_COM3	src/ov7720.h	27;"	d
+OV7720_KERN_DEBUG	src/ov7720dh.c	30;"	d	file:
+OV7720_NAME	ov7720_driver.c	36;"	d	file:
+OV7720_NAME	src/ov7720dh.c	52;"	d	file:
 OV7720_PID	ov7720_def.h	18;"	d
+OV7720_PID	src/ov7720.h	25;"	d
+OV7720_RESET_PIN	src/ov7720dh.c	50;"	d	file:
 OV7720_VER	ov7720_def.h	19;"	d
-RESET_PIN	ov7720.c	/^	RESET_PIN;$/;"	m	struct:ov7720_pin	file:	access:public
-RESET_PIN	ov7720.h	/^	RESET_PIN;$/;"	m	struct:ov7720_pin	access:public
-SCL_PIN	ov7720.c	/^	SCL_PIN;	$/;"	m	struct:ov7720_pin	file:	access:public
-SCL_PIN	ov7720.h	/^	SCL_PIN;	$/;"	m	struct:ov7720_pin	access:public
-SDA_PIN	ov7720.c	/^	SDA_PIN;$/;"	m	struct:ov7720_pin	file:	access:public
-SDA_PIN	ov7720.h	/^	SDA_PIN;$/;"	m	struct:ov7720_pin	access:public
+OV7720_VER	src/ov7720.h	26;"	d
+Office_mode_set	src/ov7720dh.c	/^int Office_mode_set(void)$/;"	f	signature:(void)
+PWD	src/Makefile	/^PWD	:= $(shell pwd)$/;"	m
+RESET_PIN	ov7720.c	/^	RESET_PIN;$/;"	m	struct:ov7720_pin	file:
+RESET_PIN	ov7720.h	/^	RESET_PIN;$/;"	m	struct:ov7720_pin
+SATURATION_SET_CMD	src/ov7720.h	14;"	d
+SCCB_OV7720_PINS	src/ov7720dh.c	/^struct SCCB_OV7720_PINS$/;"	s	file:
+SCCB_salve_Address	src/ov7720.h	11;"	d
+SCL	src/ov7720dh.c	48;"	d	file:
+SCL_PIN	ov7720.c	/^	SCL_PIN;	$/;"	m	struct:ov7720_pin	file:
+SCL_PIN	ov7720.h	/^	SCL_PIN;	$/;"	m	struct:ov7720_pin
+SD66XX_HN	src/ov7720.h	48;"	d
+SDA	src/ov7720dh.c	49;"	d	file:
+SDA_PIN	ov7720.c	/^	SDA_PIN;$/;"	m	struct:ov7720_pin	file:
+SDA_PIN	ov7720.h	/^	SDA_PIN;$/;"	m	struct:ov7720_pin
 SLAVE_OV7720_ADDR	ov7720_def.h	16;"	d
+SPECIAL_EFFECTS_SET_CMD	src/ov7720.h	17;"	d
+STANDARD_SET_CMD	src/ov7720.h	16;"	d
+Simple_AWB_select	src/ov7720dh.c	/^int Simple_AWB_select(void)$/;"	f	signature:(void)
+Special_effects_set	src/ov7720dh.c	/^int Special_effects_set(unsigned int level)$/;"	f	signature:(unsigned int level)
+Sunny_mode_set	src/ov7720dh.c	/^int Sunny_mode_set(void)$/;"	f	signature:(void)
 TIME_DELAY_US	gpio_i2c.c	23;"	d	file:
 _DEVTYPE	ov7720_def.h	/^typedef enum _DEVTYPE$/;"	g
 _OV7720	ov7720.h	/^typedef struct _OV7720$/;"	s
-_OV7720::pin	ov7720.h	/^	struct ov7720_pin pin;$/;"	m	struct:_OV7720	typeref:struct:_OV7720::ov7720_pin	access:public
-_OV7720::priv	ov7720.h	/^	void* priv;$/;"	m	struct:_OV7720	access:public
-_OV7720::read	ov7720.h	/^	FuntionSccbRead read;$/;"	m	struct:_OV7720	access:public
-_OV7720::reset	ov7720.h	/^	FuntionSccbReset reset;$/;"	m	struct:_OV7720	access:public
-_OV7720::write	ov7720.h	/^	FuntionSccbWrite write;$/;"	m	struct:_OV7720	access:public
 _OV7720_DEF_H	ov7720_def.h	10;"	d
+__OV7720DH_H__	src/ov7720.h	9;"	d
+__attribute_used__	src/ov7720.mod.c	/^__attribute_used__$/;"	v	file:
+__attribute_used__	src/ov7720.mod.c	/^__attribute_used__$/;"	v	typeref:struct:____versions	file:
+__this_module	src/ov7720.mod.c	/^struct module __this_module$/;"	v	typeref:struct:module
+a7_reset_0v7720	src/ov7720dh.c	/^void a7_reset_0v7720(void)$/;"	f	signature:(void)
+a7_sccb_pin	src/ov7720dh.c	/^struct SCCB_OV7720_PINS a7_sccb_pin={6,47,42};$/;"	v	typeref:struct:SCCB_OV7720_PINS
 clock_ack	gpio_i2c.c	/^static int clock_ack(void)$/;"	f	file:	signature:(void)
+dbg	src/ov7720dh.c	31;"	d	file:
+dbg	src/ov7720dh.c	33;"	d	file:
 delay_us	gpio_i2c.c	/^static int delay_us(int ussec)$/;"	f	file:	signature:(int ussec)
+flip_set	src/ov7720dh.c	/^static int flip_set(unsigned char arg)$/;"	f	file:	signature:(unsigned char arg)
+fps25_frame_set	src/ov7720dh.c	/^int fps25_frame_set(void)$/;"	f	signature:(void)
+fps25_ycbcr_vga	src/ov7720dh.c	/^int fps25_ycbcr_vga(void)$/;"	f	signature:(void)
+fps30_frame_set	src/ov7720dh.c	/^int fps30_frame_set(void)$/;"	f	signature:(void)
+gpio_i2c_read	src/gpio_i2c.c	/^unsigned char gpio_i2c_read(unsigned char devaddress, unsigned char address)$/;"	f	signature:(unsigned char devaddress, unsigned char address)
+gpio_i2c_write	src/gpio_i2c.c	/^void gpio_i2c_write(unsigned char devaddress, unsigned char address, unsigned char data)$/;"	f	signature:(unsigned char devaddress, unsigned char address, unsigned char data)
 gpio_readbit	gpio_i2c.c	/^extern int gpio_readbit(int gio_num);$/;"	p	file:	signature:(int gio_num)
+gpio_readbit	src/gpio_i2c.c	/^extern int gpio_readbit(int gio_num);$/;"	p	file:	signature:(int gio_num)
+gpio_sccb_read	src/gpio_i2c.c	/^unsigned char gpio_sccb_read(unsigned char devaddress, unsigned char address)$/;"	f	signature:(unsigned char devaddress, unsigned char address)
+gpio_sccb_read	src/ov7720.h	/^unsigned char gpio_sccb_read(unsigned char devaddress, unsigned char address);$/;"	p	signature:(unsigned char devaddress, unsigned char address)
 gpio_writebit	gpio_i2c.c	/^extern int gpio_writebit(int gio_num, int value);$/;"	p	file:	signature:(int gio_num, int value)
+gpio_writebit	src/gpio_i2c.c	/^extern int gpio_writebit(int gio_num, int value);$/;"	p	file:	signature:(int gio_num, int value)
+i2c_clr	src/gpio_i2c.c	/^static void i2c_clr(unsigned char whichline)$/;"	f	file:	signature:(unsigned char whichline)
+i2c_data_read	src/gpio_i2c.c	/^static unsigned char i2c_data_read(void)$/;"	f	file:	signature:(void)
 i2c_read	gpio_i2c.c	/^static unsigned char i2c_read(unsigned char dev_addr, unsigned char addr)$/;"	f	file:	signature:(unsigned char dev_addr, unsigned char addr)
 i2c_read_bit	gpio_i2c.c	/^static unsigned char i2c_read_bit(int dev_addr, int addr)$/;"	f	file:	signature:(int dev_addr, int addr)
 i2c_read_byte	gpio_i2c.c	/^static unsigned char i2c_read_byte(unsigned char addr)$/;"	f	file:	signature:(unsigned char addr)
+i2c_receive_ack	src/gpio_i2c.c	/^static int i2c_receive_ack(void)$/;"	f	file:	signature:(void)
+i2c_receive_byte	src/gpio_i2c.c	/^static unsigned char i2c_receive_byte(void)$/;"	f	file:	signature:(void)
+i2c_send_ack	src/gpio_i2c.c	/^static void i2c_send_ack(void)$/;"	f	file:	signature:(void)
+i2c_send_byte	src/gpio_i2c.c	/^static void i2c_send_byte(unsigned char c)$/;"	f	file:	signature:(unsigned char c)
+i2c_set	src/gpio_i2c.c	/^static void  i2c_set(unsigned char whichline)$/;"	f	file:	signature:(unsigned char whichline)
+i2c_start_bit	src/gpio_i2c.c	/^static void i2c_start_bit(void)$/;"	f	file:	signature:(void)
+i2c_stop_bit	src/gpio_i2c.c	/^static void i2c_stop_bit(void)$/;"	f	file:	signature:(void)
 i2c_write	gpio_i2c.c	/^static int i2c_write(unsigned char dev_addr, unsigned char addr,unsigned char data)$/;"	f	file:	signature:(unsigned char dev_addr, unsigned char addr,unsigned char data)
 i2c_write_byte	gpio_i2c.c	/^static int i2c_write_byte(unsigned char data)$/;"	f	file:	signature:(unsigned char data)
+k6_k7_reset_ov7720	src/ov7720dh.c	/^void k6_k7_reset_ov7720(void)$/;"	f	signature:(void)
+k6_k7_sccb_pin	src/ov7720dh.c	/^struct SCCB_OV7720_PINS k6_k7_sccb_pin={6,47,7};$/;"	v	typeref:struct:SCCB_OV7720_PINS
+light_mode_set	src/ov7720dh.c	/^static int light_mode_set(unsigned char arg)$/;"	f	file:	signature:(unsigned char arg)
+mirror_set	src/ov7720dh.c	/^static int mirror_set(unsigned char arg)$/;"	f	file:	signature:(unsigned char arg)
+obj-m	src/Makefile	/^obj-m	:= ov7720.o $/;"	m
+ov7720-objs	src/Makefile	/^ov7720-objs := proc.o ov7720dh.o$/;"	m
+ov7720_cleanup	src/ov7720dh.c	/^module_exit(ov7720_cleanup);$/;"	v
+ov7720_cleanup	src/ov7720dh.c	/^static void __exit ov7720_cleanup(void)$/;"	f	file:	signature:(void)
 ov7720_create	ov7720.c	/^OV7720* ov7720_create(FuntionSccbRead read, $/;"	f	signature:(FuntionSccbRead read, FuntionSccbWrite write, FUnFuntionSccbReset reset, struct ov7720_pin pin)
 ov7720_create	ov7720.h	/^OV7720* ov7720_create(FuntionSccbRead read, FuntionSccbWrite write, FuntionSccbReset rest, struct ov7720_pin pin);$/;"	p	signature:(FuntionSccbRead read, FuntionSccbWrite write, FuntionSccbReset rest, struct ov7720_pin pin)
+ov7720_device_init	src/ov7720dh.c	/^static int ov7720_device_init(void)$/;"	f	file:	signature:(void)
+ov7720_devices	src/ov7720dh.c	/^struct cdev ov7720_devices;$/;"	v	typeref:struct:cdev
+ov7720_fops	src/ov7720dh.c	/^static struct file_operations ov7720_fops = {$/;"	v	typeref:struct:file_operations	file:
+ov7720_init	src/ov7720dh.c	/^module_init(ov7720_init);$/;"	v
+ov7720_init	src/ov7720dh.c	/^static int ov7720_init(void)$/;"	f	file:	signature:(void)
+ov7720_ioctl	ov7720_driver.c	/^static int ov7720_ioctl(struct inode *inode, struct file *filep, int cmd, unsigned long arg);$/;"	p	file:	signature:(struct inode *inode, struct file *filep, int cmd, unsigned long arg)
+ov7720_ioctl	src/ov7720dh.c	/^int ov7720_ioctl(struct inode *inode, struct file *file, unsigned int cmd, unsigned long arg)$/;"	f	signature:(struct inode *inode, struct file *file, unsigned int cmd, unsigned long arg)
+ov7720_ioctl	src/ov7720dh.c	/^static int ov7720_ioctl(struct inode *inode, struct file *filp, unsigned int cmd, unsigned long arg);$/;"	p	file:	signature:(struct inode *inode, struct file *filp, unsigned int cmd, unsigned long arg)
+ov7720_major	ov7720_driver.c	/^static u32 ov7720_major = 144;$/;"	v	file:
+ov7720_major	src/ov7720dh.c	/^static u32 ov7720_major = 144;$/;"	v	file:
+ov7720_minor	ov7720_driver.c	/^static u32 ov7720_minor = 0;$/;"	v	file:
+ov7720_minor	src/ov7720dh.c	/^static u32 ov7720_minor = 0;$/;"	v	file:
+ov7720_open	ov7720_driver.c	/^static int ov7720_open(struct inode *inode, struct file *filep);$/;"	p	file:	signature:(struct inode *inode, struct file *filep)
+ov7720_open	src/ov7720dh.c	/^static int ov7720_open(struct inode *inode, struct file *filep)$/;"	f	file:	signature:(struct inode *inode, struct file *filep)
+ov7720_open	src/ov7720dh.c	/^static int ov7720_open(struct inode *inode, struct file *filep);$/;"	p	file:	signature:(struct inode *inode, struct file *filep)
 ov7720_pin	ov7720.c	/^struct ov7720_pin$/;"	s	file:
 ov7720_pin	ov7720.h	/^struct ov7720_pin$/;"	s
-ov7720_pin::RESET_PIN	ov7720.c	/^	RESET_PIN;$/;"	m	struct:ov7720_pin	file:	access:public
-ov7720_pin::RESET_PIN	ov7720.h	/^	RESET_PIN;$/;"	m	struct:ov7720_pin	access:public
-ov7720_pin::SCL_PIN	ov7720.c	/^	SCL_PIN;	$/;"	m	struct:ov7720_pin	file:	access:public
-ov7720_pin::SCL_PIN	ov7720.h	/^	SCL_PIN;	$/;"	m	struct:ov7720_pin	access:public
-ov7720_pin::SDA_PIN	ov7720.c	/^	SDA_PIN;$/;"	m	struct:ov7720_pin	file:	access:public
-ov7720_pin::SDA_PIN	ov7720.h	/^	SDA_PIN;$/;"	m	struct:ov7720_pin	access:public
-pin	ov7720.h	/^	struct ov7720_pin pin;$/;"	m	struct:_OV7720	typeref:struct:_OV7720::ov7720_pin	access:public
-priv	ov7720.h	/^	void* priv;$/;"	m	struct:_OV7720	access:public
-read	ov7720.h	/^	FuntionSccbRead read;$/;"	m	struct:_OV7720	access:public
+ov7720_release	ov7720_driver.c	/^static int ov7720_release(struct inode *inode, struct file *filep);$/;"	p	file:	signature:(struct inode *inode, struct file *filep)
+ov7720_release	src/ov7720dh.c	/^static int ov7720_release(struct inode *inode, struct file *filep)$/;"	f	file:	signature:(struct inode *inode, struct file *filep)
+ov7720_release	src/ov7720dh.c	/^static int ov7720_release(struct inode *inode, struct file *filep);$/;"	p	file:	signature:(struct inode *inode, struct file *filep)
+ov7720_rst_pin	src/ov7720dh.c	/^	int ov7720_rst_pin; 	\/\/7$/;"	m	struct:SCCB_OV7720_PINS	file:
+ov7720_sccb_pin	src/ov7720dh.c	/^struct SCCB_OV7720_PINS ov7720_sccb_pin={6,47,7};$/;"	v	typeref:struct:SCCB_OV7720_PINS
+ov7720_scl_pin	src/ov7720dh.c	/^	int ov7720_scl_pin; 	\/\/6$/;"	m	struct:SCCB_OV7720_PINS	file:
+ov7720_sda_pin	src/ov7720dh.c	/^	int ov7720_sda_pin;	\/\/47$/;"	m	struct:SCCB_OV7720_PINS	file:
+pin	ov7720.h	/^	struct ov7720_pin pin;$/;"	m	struct:_OV7720	typeref:struct:_OV7720::ov7720_pin
+priv	ov7720.h	/^	void* priv;$/;"	m	struct:_OV7720
+read	ov7720.h	/^	FuntionSccbRead read;$/;"	m	struct:_OV7720
 read_sccb	gpio_i2c.h	/^int read_sccb(unsigned char addr, unsigned char data);$/;"	p	signature:(unsigned char addr, unsigned char data)
 recive_ack	gpio_i2c.c	/^static unsigned char recive_ack(void)$/;"	f	file:	signature:(void)
-reset	ov7720.h	/^	FuntionSccbReset reset;$/;"	m	struct:_OV7720	access:public
+reset	ov7720.h	/^	FuntionSccbReset reset;$/;"	m	struct:_OV7720
+rov7720_proc_open	src/proc.c	/^static int rov7720_proc_open(struct inode *inode, struct file *filp)$/;"	f	file:	signature:(struct inode *inode, struct file *filp)
+rov7720_proc_ops	src/proc.c	/^struct file_operations rov7720_proc_ops = {$/;"	v	typeref:struct:file_operations
+rov7720_seq_next	src/proc.c	/^static void *rov7720_seq_next(struct seq_file *s, void *v, loff_t *pos)$/;"	f	file:	signature:(struct seq_file *s, void *v, loff_t *pos)
+rov7720_seq_ops	src/proc.c	/^static struct seq_operations rov7720_seq_ops={$/;"	v	typeref:struct:seq_operations	file:
+rov7720_seq_show	src/proc.c	/^static int rov7720_seq_show(struct seq_file *s, void *v)$/;"	f	file:	signature:(struct seq_file *s, void *v)
+rov7720_seq_start	src/proc.c	/^static void *rov7720_seq_start(struct seq_file *s, loff_t *pos)  $/;"	f	file:	signature:(struct seq_file *s, loff_t *pos)
+rov7720_seq_stop	src/proc.c	/^static void rov7720_seq_stop(struct seq_file *s, void *v)$/;"	f	file:	signature:(struct seq_file *s, void *v)
+seq_show_state	src/proc.c	/^static int seq_show_state = 1;$/;"	v	file:
 set_ack	gpio_i2c.c	/^static int set_ack(void)$/;"	f	file:	signature:(void)
 set_high	gpio_i2c.c	/^static int set_high(unsigned char gpio_pin)$/;"	f	file:	signature:(unsigned char gpio_pin)
 set_low	gpio_i2c.c	/^static int set_low(unsigned char gpio_pin)$/;"	f	file:	signature:(unsigned char gpio_pin)
 set_start_bit	gpio_i2c.c	/^static int set_start_bit()$/;"	f	file:
 set_stop_bit	gpio_i2c.c	/^static int set_stop_bit()$/;"	f	file:
-write	ov7720.h	/^	FuntionSccbWrite write;$/;"	m	struct:_OV7720	access:public
+standard_set	src/ov7720dh.c	/^static int standard_set(unsigned char arg)$/;"	f	file:	signature:(unsigned char arg)
+time_delay_us	src/gpio_i2c.c	/^void time_delay_us(unsigned int usec)$/;"	f	signature:(unsigned int usec)
+unix	src/ov7720.mod.c	7;"	d	file:
+write	ov7720.h	/^	FuntionSccbWrite write;$/;"	m	struct:_OV7720
+write_SCCB	src/ov7720dh.c	/^int write_SCCB(unsigned char address, unsigned char data)$/;"	f	signature:(unsigned char address, unsigned char data)
 write_sccb	gpio_i2c.h	/^int write_sccb(unsigned char addr, unsigned char data);$/;"	p	signature:(unsigned char addr, unsigned char data)
