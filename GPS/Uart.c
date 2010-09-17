@@ -12,22 +12,32 @@
 #include <termios.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <string.h>
 #include "Uart.h"
 #define BAUDRATE B115200
 #define _POSIX_SOURCE 1
 
 struct _GPS_MSG
 {
-
+    date_time date; //时间
+    char status; //接收状态
+    double latitude; //纬度
+    double longitude; //经度
+    char NS; //南北极
+    char EW; //东西
+    double speed; //速度
+    double high; //高度
 };
 
-static RET uart_init(int fd_com)
+int fd_com = -1;
+
+static RET uart_init()
 {
     int ret = RET_INIT_FAIL;
     struct termios oldtio;
     struct termios newtio;
 
-    tcgetattr(fd_com, &oldtiio);
+    tcgetattr(fd_com, &oldtio);
     bzero(&newtio, sizeof(termios));
 
     newtio.c_cflag = BAUDRATE | CS8 | CLOCAL |CREAD | HUPCL;
@@ -51,14 +61,19 @@ static RET uart_init(int fd_com)
 
     ret = RET_OK;
 }
-static RET msg_parse(struct GPS_MSG *gps_msg)
+
+static void UTC_to_BTC(date_time *GPS)
+{
+
+}
+
+static RET msg_parse(char *line, struct GPS_MSG *gps_msg)
 {
 
 }
 
 RET uart_create()
 {
-	int fd_com;
 	int ret = RET_OPEN_FAIL;
 
 	if ((fd_com = open(COM1, O_RDWR | O_NOCTTY)) < 0)
@@ -77,13 +92,14 @@ RET uart_create()
 }
 
 //fd_com怎么传还没搞清楚
-RET uart_destory(int fd_com)
+RET uart_destory()
 {
 	int ret = RET_CLOSE_FAIL;
 
-	if ((fd_com = close(fd_com)) < 0)
+	if ((ret = close(fd_com)) < 0)
 	{
 		printf("close fd_com error");
+		ret = RET_CLOSE_FAIL;
 		return ret;
 	}
 
