@@ -21,7 +21,6 @@ static void* uart_process()
     RET ret = RET_OPEN_FAIL;
 
     assert(RET_OK == ret);
-
 	while(1)
 	{
 	    uart_read();
