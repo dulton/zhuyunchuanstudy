@@ -3,31 +3,51 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
-DARRAY_H	.\darray.h	6;"	d
-DArray	.\darray.h	/^typedef struct _DArray DArray;$/;"	t	typeref:struct:_DArray
-DECLS_BEGIN	.\typedef.h	22;"	d
-DECLS_BEGIN	.\typedef.h	25;"	d
-DECLS_END	.\typedef.h	23;"	d
-DECLS_END	.\typedef.h	26;"	d
-DataCompareFunc	.\typedef.h	/^typedef int  (*DataCompareFunc)(void* ctx, void* data);$/;"	t
-DataDestroyFunc	.\typedef.h	/^typedef void (*DataDestroyFunc)(void* ctx, void* data);$/;"	t
-DataVisitFunc	.\typedef.h	/^typedef Ret	 (*DataVisitFunc)(void* ctx, void* data); $/;"	t
-RET_FAIL	.\typedef.h	/^	RET_FAIL,	$/;"	e	enum:_Ret
-RET_INVALID_PARAMS	.\typedef.h	/^	RET_INVALID_PARAMS,$/;"	e	enum:_Ret
-RET_OK	.\typedef.h	/^	RET_OK,$/;"	e	enum:_Ret
-RET_OOM	.\typedef.h	/^	RET_OOM,$/;"	e	enum:_Ret
-RET_STOP	.\typedef.h	/^	RET_STOP,$/;"	e	enum:_Ret
-Ret	.\typedef.h	/^}Ret;$/;"	t	typeref:enum:_Ret
-SAFE_FREE	.\typedef.h	35;"	d
-SortFunc	.\typedef.h	/^typedef Ret (*SortFunc)(void** array, size_t nr, DataCompareFunc cmp);$/;"	t
-TYPEDEF_H	.\typedef.h	6;"	d
-_DArray	.\darray.c	/^struct _DArray$/;"	s	file:
-_Ret	.\typedef.h	/^typedef enum _Ret$/;"	g
-alloc_size	.\darray.c	/^	size_t alloc_size;$/;"	m	struct:_DArray	file:
-data	.\darray.c	/^	void** data;$/;"	m	struct:_DArray	file:
-data_destroy	.\darray.c	/^	DataDestroyFunc data_destroy;$/;"	m	struct:_DArray	file:
-data_destroy_ctx	.\darray.c	/^	void* data_destroy_ctx;$/;"	m	struct:_DArray	file:
-return_if_fail	.\typedef.h	29;"	d
-return_val_if_fail	.\typedef.h	32;"	d
-size	.\darray.c	/^	size_t size;$/;"	m	struct:_DArray	file:
+!_TAG_PROGRAM_VERSION	5.7	//
+DARRAY_H	darray.h	6;"	d
+DArray	darray.h	/^typedef struct _DArray DArray;$/;"	t	typeref:struct:_DArray
+DECLS_BEGIN	typedef.h	22;"	d
+DECLS_BEGIN	typedef.h	25;"	d
+DECLS_END	typedef.h	23;"	d
+DECLS_END	typedef.h	26;"	d
+DataCompareFunc	typedef.h	/^typedef int  (*DataCompareFunc)(void* ctx, void* data);$/;"	t
+DataDestroyFunc	typedef.h	/^typedef void (*DataDestroyFunc)(void* ctx, void* data);$/;"	t
+DataVisitFunc	typedef.h	/^typedef Ret	 (*DataVisitFunc)(void* ctx, void* data); $/;"	t
+MINI_RELLOC_SIZE	darray.c	41;"	d	file:
+RET_FAIL	typedef.h	/^	RET_FAIL,	$/;"	e	enum:_Ret
+RET_INVALID_PARAMS	typedef.h	/^	RET_INVALID_PARAMS,$/;"	e	enum:_Ret
+RET_OK	typedef.h	/^	RET_OK,$/;"	e	enum:_Ret
+RET_OOM	typedef.h	/^	RET_OOM,$/;"	e	enum:_Ret
+RET_STOP	typedef.h	/^	RET_STOP,$/;"	e	enum:_Ret
+Ret	typedef.h	/^}Ret;$/;"	t	typeref:enum:_Ret
+SAFE_FREE	typedef.h	35;"	d
+SortFunc	typedef.h	/^typedef Ret (*SortFunc)(void** array, size_t nr, DataCompareFunc cmp);$/;"	t
+TYPEDEF_H	typedef.h	6;"	d
+_DArray	darray.c	/^struct _DArray$/;"	s	file:
+_Ret	typedef.h	/^typedef enum _Ret$/;"	g
+alloc_size	darray.c	/^	size_t alloc_size;$/;"	m	struct:_DArray	file:
+darray_append	darray.c	/^Ret darray_append(DArray* thiz, void* data)$/;"	f	signature:(DArray* thiz, void* data)
+darray_append	darray.h	/^Ret darray_append(DArray* thiz, void* data);$/;"	p	signature:(DArray* thiz, void* data)
+darray_create	darray.c	/^DArray* darray_create(DataDestroyFunc darray_destroy, void* ctx)$/;"	f	signature:(DataDestroyFunc darray_destroy, void* ctx)
+darray_create	darray.h	/^DArray* darray_create(DataDestroyFunc data_destroy, void* ctx);$/;"	p	signature:(DataDestroyFunc data_destroy, void* ctx)
+darray_delete	darray.h	/^Ret darray_delete(DArray* thiz, size_t index);$/;"	p	signature:(DArray* thiz, size_t index)
+darray_destroy	darray.c	/^static void darray_destroy(DArray* thiz, void* data)$/;"	f	file:	signature:(DArray* thiz, void* data)
+darray_destroy	darray.h	/^void darray_destroy(DArray* thiz);$/;"	p	signature:(DArray* thiz)
+darray_expand	darray.c	/^static Ret darray_expand(DArray* thiz, size_t need)$/;"	f	file:	signature:(DArray* thiz, size_t need)
+darray_find	darray.h	/^Ret darray_find(DArray* thiz, DataCompareFunc cmp, void* ctx);$/;"	p	signature:(DArray* thiz, DataCompareFunc cmp, void* ctx)
+darray_get_by_index	darray.c	/^void** darray_get_by_index(DArray* thiz, size_t index)$/;"	f	signature:(DArray* thiz, size_t index)
+darray_get_by_index	darray.h	/^Ret darray_get_by_index(DArray* thiz, size_t index, void** data);$/;"	p	signature:(DArray* thiz, size_t index, void** data)
+darray_insert	darray.c	/^Ret darray_insert(DArray* thiz, size_t index, void* data)$/;"	f	signature:(DArray* thiz, size_t index, void* data)
+darray_insert	darray.h	/^Ret	darray_insert(DArray* thiz, size_t index, void* data);$/;"	p	signature:(DArray* thiz, size_t index, void* data)
+darray_length	darray.h	/^size_t darray_length(DArray* thiz);$/;"	p	signature:(DArray* thiz)
+darray_prepend	darray.c	/^Ret darray_prepend(DArray* thiz, void* data)$/;"	f	signature:(DArray* thiz, void* data)
+darray_prepend	darray.h	/^Ret darray_prepend(DArray* thiz, void* data);$/;"	p	signature:(DArray* thiz, void* data)
+darray_search	darray.h	/^Ret darray_search(DArray* thiz, DataVistFunc visit, void* ctx);$/;"	p	signature:(DArray* thiz, DataVistFunc visit, void* ctx)
+darray_set_by_index	darray.c	/^Ret darray_set_by_index(DArray* thiz, size_t index, void* data)$/;"	f	signature:(DArray* thiz, size_t index, void* data)
+darray_set_by_index	darray.h	/^Ret darray_set_by_index(DArray* thiz, size_t index, void* Data);$/;"	p	signature:(DArray* thiz, size_t index, void* Data)
+data	darray.c	/^	void** data;$/;"	m	struct:_DArray	file:
+data_destroy	darray.c	/^	DataDestroyFunc data_destroy;$/;"	m	struct:_DArray	file:
+data_destroy_ctx	darray.c	/^	void* data_destroy_ctx;$/;"	m	struct:_DArray	file:
+return_if_fail	typedef.h	29;"	d
+return_val_if_fail	typedef.h	32;"	d
+size	darray.c	/^	size_t size;$/;"	m	struct:_DArray	file:
